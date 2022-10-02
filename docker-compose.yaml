@@ -1,0 +1,15 @@
+version: '3'
+services:
+  tomcat-server-1:
+    image: 'tomcat'
+    ports:
+      - "8090:8080"
+    volumes:
+      - "/mnt/dockerwars:/usr/local/tomcat/webapps/"
+  tomcat-server-2:
+    image: 'tomcat'
+    ports:
+      - "8091:8080"
+    volumes:
+      - "/mnt/dockerwars:/usr/local/tomcat/webapps/"
+
